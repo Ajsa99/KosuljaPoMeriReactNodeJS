@@ -1,0 +1,303 @@
+
+/* Employee */
+
+.infoProduct{
+  width: 87%;
+  background: white;
+  border-radius: 10px 10px;
+  height: 70vh;
+  position: relative;
+}
+.infoProduct h1{
+  background: #191919;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  font-size: 32px;
+  width: 100%;
+  height: 10vh;
+}
+  
+
+  
+/* Order Pending */
+
+.ProductTable .table{
+  overflow: scroll;
+  width: 100%;
+  height: 58vh;
+  border-radius: 0px 0px 10px 10px;
+}
+.ProductTable .table table{
+  width: 86%;
+  margin: 1% 7%;
+}
+.ProductTable table tr th{
+  font-size: 22px;
+  font-family: 'Inter';
+}
+.ProductTable table tr th,
+.ProductTable table tr td{
+  padding: 2% 1%;
+  border-bottom: 1px solid gray;
+}
+.ProductTable table .button{
+  background: #515151;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  padding: 5%;
+}
+.ProductTable table button{
+  padding: 10% 0%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.ProductTable .Details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Details .left{
+  width: 40%;
+  height: 60vh;
+}
+.Details .right{
+  width: 59.5%;
+  height: 58vh;
+  margin-right: 0.5%;
+  background: #0E0E0E;
+  position: relative;
+  border-radius: 5px;
+}
+.Details .right button{
+  width: 5%;
+  height: 5%;
+  padding: 1%;
+  position: absolute;
+  border:none;
+  background: none;
+  top:0%;
+  left:0%;
+  color: white;
+  cursor: pointer;
+}
+.Details .right table{
+  width: 90%;
+}
+.Details .right table tr td,
+.Details .right table tr th{
+  text-align: start;
+  border: 1px solid gray;
+  padding: 0.1%;
+  color: #e1e1e1;
+  font-size: 14px;
+  padding: 0.2%;
+}
+.right .meter{
+  cursor: pointer;
+}
+.right .meter:hover{
+  color:blue;
+}
+
+  
+@media only screen and (max-width: 990px) {
+
+  .infoProduct{
+    width: 95%;
+    height: 130vh;
+  }
+  .ProductTable .table table{
+    width: 98%;
+    margin: 1%;
+  }
+  .ProductTable table tr th{
+    font-size: 18px;
+  }
+  .containerProfile .Details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left{
+    width: 65%;
+  }
+  .Details  .right{
+    width: 100%;
+    height: 60vh;
+    border-radius: 0px 0px 8px 8px;
+  }
+  .Details .left{
+    width: 40%;
+    height: 60vh;
+  }
+  .ProductTable .table{
+    height: 110vh;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .infoProduct{
+    height: 100vh;
+  }
+  .ProductTable h1{
+    font-size: 20px;
+    height: 8vh;
+  }
+  .ProductTable .table{
+    height: 90vh;
+  }
+  .ProductTable .table tr th{
+    font-size: 16px;
+  }
+  .ProductTable .table tr td{
+    font-size: 14px;
+  }
+  .Details .left{
+    width: 100%;
+  }
+}
+/* Order Process */
+
+.ProcessTable .table{
+  overflow: scroll;
+  width: 100%;
+  height: 60vh;
+}
+.ProcessTable .table table{
+  width: 80%;
+  margin: 3% 10%;
+}
+.ProcessTable .table table tr th{
+  font-size: 22px;
+  font-family: 'Inter';
+}
+.ProcessTable .table table tr th,
+.ProcessTable .table table tr td{
+  border-bottom:1px solid black;
+  padding: 1%;
+}
+.ProcessTable .Details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 990px) {
+  .ProcessTable .table table{
+    width: 98%;
+    margin: 1%;
+  }
+  .ProcessTable .Details{
+    flex-direction: column;
+  }
+  .ProcessTable .table{
+    height: 110vh;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .ProcessTable h1{
+    font-size: 20px;
+    height: 8vh;
+  }
+  .ProcessTable .table{
+    height: 90vh;
+  }
+  .ProcessTable .table tr th{
+    font-size: 16px;
+  }
+  .ProcessTable .table tr td{
+    font-size: 14px;
+  }
+}
+
+/* Order Completed */
+
+.CompletedTable .table{
+    overflow: scroll;
+    width: 100%;
+    height: 58vh;
+  }
+  .CompletedTable .table table{
+    width: 80%;
+    margin: 3% 10%;
+  }
+  .CompletedTable .table table tr th{
+    font-size: 22px;
+    font-family: 'Inter';
+  }
+  .CompletedTable .table table tr th,
+  .CompletedTable .table table tr td{
+    border-bottom:1px solid black;
+    padding: 1%;
+  }
+  .CompletedTable .table .linetd{
+    width: 35%;
+  }
+  .CompletedTable .table .linetd div{
+    background-color: #D0D0D0;
+    border-radius: 13px;
+    height: 1vh;
+    width: 100%;
+  }
+  .CompletedTable .table .linetd .line1{
+    background-color: #1A1A1A;
+  } 
+  .CompletedTable .table .linetd .line2 div{
+    background-color: #1A1A1A;
+    width: 50%;
+  } 
+  .CompletedTable .table .linetd .line3 div{
+    background-color: #1A1A1A;
+    width: 10%;
+  } 
+  .CompletedTable .table .linetd .line4 div{
+    background-color: #1A1A1A;
+    width: 5%;
+  } 
+  .CompletedTable .Details{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 990px) {
+    
+    .CompletedTable .table table{
+      width: 98%;
+      margin: 1%;
+    }
+    .CompletedTable .Details{
+      flex-direction: column;
+    }
+    .CompletedTable .table{
+      height: 110vh;
+    }
+  
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .CompletedTable h1{
+      font-size: 20px;
+      height: 8vh;
+    }
+    .CompletedTable .table{
+      height: 90vh;
+    }
+    .CompletedTable .table tr th{
+      font-size: 16px;
+    }
+    .CompletedTable .table tr td{
+      font-size: 14px;
+    }
+  }

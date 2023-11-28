@@ -1,0 +1,16 @@
+/* About as */
+
+.containerAboutUs{
+    margin: 5%;
+  }
+  .containerAboutUs h1{
+    margin-bottom: 5%;
+    background-color: #9b9b9b;
+    border-radius: 6px;
+    padding: 0.5%;
+  }
+  .containerAboutUs h3,
+  .containerAboutUs p{
+    margin: 1% 8%;
+    text-align: start;
+  }

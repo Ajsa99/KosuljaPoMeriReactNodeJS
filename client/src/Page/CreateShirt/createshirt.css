@@ -1,0 +1,836 @@
+/* Create shirt */
+
+.containerCreateShirt{
+    display: flex;
+    flex-direction: column;
+    background:#B8B8B8;
+  }
+  .containerShirt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .containerShirt .left{
+    width: 42%;
+    margin: 5% 2% 5% 6%;
+    text-align: center;
+  }
+  .headerLeft{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    background-color: #D9D9D9;
+    border-radius: 6px;
+  }
+  .headerLeft button{
+    width: 10%;
+    padding: 0px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  .containerShirt .header{
+    font-size: 32px;
+    font-family: serif;
+    width: 100%;
+  }
+  .containerBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 2%;
+  }
+  .containerBox .box1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containerBox .box1 div{
+    width: 23%;
+    border:1px solid #D9D9D9;
+    margin: 1%;
+  }
+  .containerBox .box1 div p{
+    font-size: 80%;
+  }
+  .box{
+    background: white;
+    width: 30%;
+    height: 300px;
+    margin: 1%;
+    border-radius: 6px;
+    padding-top: 10px;
+  }
+  .box .p {
+    background: #262626;
+    color:white;
+    height: 15%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .boxTOP{
+    height: 85%;
+  }
+  .boxTOP .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .boxColor{
+    background: cornflowerblue;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .containerShirt .right{
+    width: 42%;
+    margin: 5% 7% 5% 1%;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+  }
+  .containerShirt .right .p{
+    background: black;
+    color:white;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  .border{
+    border: 1px solid #B8B8B8;
+  }
+  .materialBox{
+    overflow: scroll;
+    width: 95%;
+    height: 600px;
+    background-color: white;
+    padding: 10px;
+  }
+  .materialBox img{
+    padding: 5px;
+    cursor: pointer;
+  }
+  .colorBox{
+    width: 20%;
+    height: 20%;
+    background: gray;
+    margin: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colorButton{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+  }
+  @media only screen and (max-width: 990px) {
+  
+    .containerShirt{
+      flex-direction: column;
+    }
+    .containerShirt .left{
+      width: 90%;
+      margin: 5%;
+    }
+    .headerLeft .header{
+      font-size: 35px;
+      padding: 0px;
+    }
+    .boxTOP .img img{
+      width: 60%;
+    }
+    .containerShirt .right{
+      width: 90%;
+      margin: 5%;
+    }
+    .boxRight .img img{
+      width: 60%;
+    }
+    .imgBigShirt img{
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+  
+    .headerLeft .header{
+      font-size: 20px;
+    }
+    .box{
+      height: 210px;
+    }
+    .box p{
+      font-size: 12px;
+    }
+    .boxTOP .img img{
+      width: 80%;
+    }
+    .materialBox{
+      height: 500px;
+    }
+    .headerLeft button{
+      width: 10%;
+      font-size: 5px;
+    }
+    .containerShirt .left{
+      width: 95%;
+      margin: 2.5%;
+    }
+  }
+  
+  .black{
+   background: black;
+   color:white;
+  }
+  .gray{
+    background: gray;
+  }
+  .pink{
+    background-color: deeppink;
+  }
+  .baby{
+    background-color: pink;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .gold{
+    background-color: darkgoldenrod;
+  }
+  .lightOrange{
+    background-color: khaki;
+  }
+  .mediumpurple{
+    background-color:mediumpurple;
+  }
+  .green{
+    background-color: green;
+  }
+  .violet{
+    background-color:blueviolet;
+  }
+  .yellow{
+    background-color: yellow;
+  
+  }
+  .brown{
+    background-color: #AC3434;
+  }
+  .cornflowerblue{
+    background-color: cornflowerblue;
+  }
+  .red{
+    background-color: red;
+  }
+  .white{
+    background-color: white;
+    color: black;
+    border: 1px solid gainsboro;
+  }
+  .orange{
+    background-color: orangered;
+  }
+  .background-gray{
+    background-color:  #d6d6d665;
+  }
+  .size{
+    width: 100%;
+    height: 90%;
+  }
+  .modelShirt{
+    display: flex;
+  }
+  .modelShirt div{
+    width: 100%;
+    margin: 5px;
+    border-bottom: 1px solid #B8B8B8;
+  }
+  .modelShirt div:hover,
+  .kragenBox div:hover
+  {
+      border:  1px solid  #B8B8B8;
+  }
+  .modelShirt p{
+    color:#9b9b9b;
+  }
+  .materialBox > p{
+    background-color: #C2BABA;
+    border-radius:6px ;
+  }
+  .kragenBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; 
+  }
+  .kragenBox div{
+    width: 30%;
+    margin: 5px;
+    border-bottom: 1px solid #B8B8B8;
+  }
+  .kragenBox p{
+    color:#9b9b9b;
+  }
+
+  /* right */
+
+  .containerElement{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 95%;
+    height: 650px;
+  }
+  .containerRight{
+    width: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:1%;
+  }
+  .boxRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    background-color: rgba(238, 231, 231, 0.823);
+  }
+  .boxRight p{
+    font-size: 10px;
+  }
+  .imgBigShirt{
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .containerShirt .right{
+      width: 95%;
+      margin: 2.5%;
+    }
+    .containerElement{
+      height: 450px;
+    }
+    .imgBigShirt{
+      width: 70%;
+    }
+    .boxRight p{
+      font-size: 8px;
+    }
+
+  }
+
+  /* Shirt Measurements */
+
+  .containerMere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 7% 10% 7%;
+    position: relative;
+  }
+  .containerMere .header{ 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #D9D9D9;
+    border-radius: 6px;
+    font-family: serif;
+  }
+  .containerMere .bodyMere{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+  .containerMere .boxMere{
+    background: #D9D9D9;
+    width: 40%;
+    border-radius: 6px;
+  }
+  .containerMere .boxMere p{
+    border-radius: 6px;
+    font-size: 25px;
+  }
+  .containerMere .boxMere .size{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerMere .boxMere .round{
+    border-radius: 50%;
+    width: 30%;
+    height: 150px;
+    background-color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5%;
+  }
+  .containerMere .boxMere button{
+    width: 20%;
+    height: 8%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -5%;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  .containerMere .boxMere button:hover{
+    color: gray;
+  }
+  .meterIMG{
+    position:absolute;
+    bottom:-20vh;
+    width:25%;
+    left:28%
+  }
+  .back{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  .back .arrow{
+      background-color: #242424;
+      color: white;
+      border-radius: 12px;
+      width: 10%;
+  }
+  
+  @media only screen and (max-width: 990px) {
+  
+    .containerMere{
+      margin: 5% 5% 10% 5%;
+    }
+    .containerMere .header{ 
+      width: 100%;
+    }
+    .containerMere .boxMere{
+      width: 49%;
+    }
+    .containerMere .boxMere .round{
+      width: 35%;
+      height: 140px;
+      font-size: 50px;
+      margin:5%;
+    }
+    .containerMere .boxMere button{
+      width: 24%;
+      margin-left: 12%;
+    }
+    .meterIMG{
+      bottom:-20vh;
+      width:25%;
+      left:35%
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .containerMere{
+      margin: 5% 2% 10% 2%;
+    }
+    .containerMere .header{ 
+      font-size: 25px;
+    }
+    .containerMere .boxMere p{
+      font-size: 15px;
+      padding: 1%;
+    }
+    .containerMere .boxMere{
+      width: 49%;
+    }
+    .containerMere .boxMere img{
+      width: 50%;
+    }
+    .containerMere .boxMere .size{
+      height: 35vh;
+    }
+    .containerMere .boxMere .round{
+      height: 70px;
+      font-size: 20px;
+    }
+    .containerMere .boxMere button{
+      width: 40%;
+      margin-left: 5%;
+      font-size: 13px;
+    }
+    .meterIMG{
+      bottom:-3vh;
+      left:36%
+    }
+  }
+
+  /* Metre */
+
+  .mereTelaContainer{
+    margin-top: 5%;
+    width: 100%;
+  }
+  .MereTelaInfo{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .MereTelaInfo .left{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .MereTelaInfo .left button{
+    padding: 1%;
+    background:  #242424;
+    color: white;
+    height: 5vh;
+    position: absolute;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    left: 26%;
+    cursor: pointer;
+  }
+  .MereTelaInfo .left button:hover{
+    background:rgba(7, 57, 114, 0.89);
+  }
+  .MereTelaInfo .left ol{
+    width:60%;
+  }
+  .MereTelaInfo .left ol li{
+    padding-top:5%;
+    cursor: pointer;
+    text-align: start;
+    display: flex;
+    width: 100%;
+  }
+  .MereTelaInfo .left ol li p{
+    padding-left: 5%;
+    color:red;
+    width: 35%;
+  }
+  .MereTelaInfo .right{
+    width: 40%;
+    border-radius: 6px;
+    background:#f1f1f1;
+    height: 85vh;
+  }
+  .MereTelaInfo .right > h3{
+    background-color: #242424;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .MereTelaInfo .right img{
+    width: 100%;
+  }
+  .MereTelaInfo .right h3{
+    height: 5vh;
+    font-size: 26px;
+  }
+  .MereTelaInfo .right .bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MereTelaInfo .right .bottom .errorMere{
+    color:red;
+    font-size: 11px;
+  }
+  .MereTelaInfo .right .bottom .inputCM{
+    width: 20%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0px;
+    background-color: #242424;
+    color: white;
+  }
+  .MereTelaInfo .right .bottom .inputCM input{
+    border-radius: 0%;
+    padding: 1%;
+    background: white;
+  }
+  .MereTelaInfo .right .bottom .inputCM  p {
+    padding: 0% 5%;
+    padding-top:12%;
+    color: white;
+  }
+  .MereTelaInfo .right .bottom p{
+    color: rgb(59, 59, 59);
+    padding: 0% 2%;
+  }
+  .MereTelaInfo .right .bottom button{
+    width: 20%;
+    padding: 1%;
+    background-color: #AC3434;
+    color:white;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .meterIMg{
+    position:absolute;
+    right: 40%;
+    bottom:-20vh;
+    width:23%;
+  }
+  
+  @media only screen and (max-width: 990px) {
+  
+    .MereTelaInfo{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .MereTelaInfo .left{
+      width: 80%;
+      margin-bottom: 10%;
+    }
+    .MereTelaInfo .right{
+      width: 60%;
+      height: 100vh;
+      margin-bottom: 5%;
+    }
+    .MereTelaInfo .right .bottom .inputCM{
+      width: 30%;
+      height: 6vh;
+      margin-bottom: 4%;
+    }
+    .MereTelaInfo .right .bottom button{
+      width: 30%;
+      padding: 2%;
+      margin-bottom: 5%;
+    }
+    .MereTelaInfo .right .bottom .errorMere{
+      font-size: 13px;
+    }
+    .MereTelaInfo .left button{
+      height: 8vh;
+      width: 20%;
+      bottom: -4%;
+      left: 82%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .MereTelaInfo .left img{
+      width: 50%
+    }
+    .MereTelaInfo .left {
+      width: 100%;
+    }
+    .MereTelaInfo .left ol li{
+      width: 100%;
+      font-size: 14px;
+    }
+    .MereTelaInfo .left ol li p{
+      width: 100%;
+    }
+    .MereTelaInfo .right{
+      width: 100%;
+    }
+    .MereTelaInfo .left button{
+      height: 8vh;
+      width: 80%;
+      bottom: 0%;
+      left: 10%;
+      font-size: 25px;
+    }
+    .meterIMg{
+      display: none;
+    }
+  }
+  
+  /* Standard */
+
+  .containerStandard{
+    background-color: #B8B8B8;
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .standard h1{
+    font-family: serif;
+  }
+  .standard{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .standard .left{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .standard .left .round{
+    background: white;
+    border-radius: 50%;
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 5%;
+    cursor: pointer;
+  }
+  .standard .right{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrowIMG{
+    width: 30%;
+    position: absolute;
+    left:0px;
+    bottom: -5%;
+  }
+  .standard .right > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34%;
+  }
+  .standard .right button{
+    padding:1%;
+    width: 75%;
+    height: 6vh;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .standard .right button:hover{
+    background:rgba(7, 57, 114, 0.89); ;
+  }
+  .standard .size{
+    background: white;
+    width: 20%;
+    height: 5vh;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 990px) {
+  
+    .standard .left .round{
+      width: 30%;
+      height: 15vh;
+      font-size: 30px;
+    }
+    .standard .right img{
+      width: 100%;
+    }
+    .standard .right button{
+      width: 80%;
+    }
+    .standard .size{
+      width: 33%;
+      height: 7vh;
+      font-size: 15px;
+      margin-left: 5%;
+    }
+    .standard .right > div{
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .standard{
+      height: 60vh;
+    }
+    .standard .left{
+      width: 50%;
+    }
+    .standard .left .round{
+      width: 44%;
+      font-size: 25px;
+      height: 14vh;
+      margin: 3%;
+    }
+    .standard .right{
+      width: 50%;
+      position: relative;
+    }
+    .standard .right h1{
+      font-size: 18px;
+    }
+    .standard .right > div{
+      width: 90%;
+      position: absolute;
+      bottom: -5%;
+    }
+    .standard .right button{
+      font-size: 18px;
+    }
+    
+  }
+
+  
+/* New Product */
+
+.newProduct{
+    border-radius: 5px;
+    background: #8E8E8E;
+    padding: 3% 0% 6% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newProduct h3{
+    background: #9b9b9b;
+    color: white;
+    padding: 2% 0%;
+    width: 100%;
+  }
+  .newProduct > div{
+      padding: 2% 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  .newProduct input{
+    padding: 1%;
+    width: 90%;
+    margin-bottom: 1%;
+  }
+  .newProduct .newimg{
+    border: 1px solid #b1b1b1;
+    width:90%;
+    border-radius: 25px;
+    margin-top: 3%;
+  }
+  .newProduct button{
+    width: 90%;
+    margin-top: 3%;
+  }
+  .newProduct .back{
+    text-align: start;
+    width: 95%;
+    color: #C2BABA;
+    margin-top: 2%;
+  }

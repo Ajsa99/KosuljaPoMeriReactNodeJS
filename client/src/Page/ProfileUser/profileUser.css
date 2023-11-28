@@ -1,0 +1,575 @@
+/* Profile */
+.containerProfile{
+    background:#B8B8B8;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+#profieImg{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  width: 20%;
+}
+.profileIcon{
+  background: white;
+  color: #1A1A1A;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.editIcon{
+  font-size: 40px;
+  cursor: pointer;
+}
+.center{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.infoType{
+  background-color: #1A1A1A;
+  color:white;
+  width: 27%;
+  border-radius: 10px 0px 0px 10px;
+  height: 70vh;
+  position: relative;
+}
+.infoType .Top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoType h3{
+  color: #D9D9D9;
+}
+.infoType p{
+ color:gray
+}
+.infoProfile .back,
+.infoProduct .back{
+  background: white;
+  color:black;
+  border-radius: 14px;
+  font-size: 16px;
+  width: 7%;
+  position: absolute;
+  left: 1%;
+  top: 5%;
+}
+.infoProfile{
+  width: 60%;
+  background: white;
+  border-radius: 0px 10px 10px 0px;
+  height: 70vh;
+  position: relative;
+}
+.infoProfile h1{
+  background: #191919;
+  border-radius: 0px 10px 0px 0px;
+  color: white;
+  font-size: 32px;
+  width: 100%;
+  height: 10vh;
+}
+.infoProfile #button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+.infoProfile #button button{
+  border-radius: 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  background: #191919;
+}
+.infoProfile .img{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width: 14%;
+}
+.infoProfile1{
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+.infoProfile h4{
+  background: black;
+  color: white;
+}
+.infoProfile table{
+  margin: 5% 10%;
+  width: 80%;
+}
+.infoProfile1 table{
+  width: 100%;
+}
+.infoProfile table tbody tr th,
+.infoProfile1 table tbody tr th{
+  border-top:1px solid gray;
+}
+.infoProfile table tr th,
+.infoProfile1 table tr th{
+  font-size: 20px;
+}
+.infoProfile table tr th,
+.infoProfile table tr td,
+.infoProfile1 table tr th,
+.infoProfile1 table tr td{
+  text-align: start;
+  color:#1A1A1A;
+  font-family: serif;
+}
+#tableLineTop{
+  padding-bottom: 4%;
+}
+#tableLineBottom{
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.infoProfile button{
+  background:#242424;
+  color: white;
+  width: 70%;
+  height: 10%;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.infoProfile button:hover{
+  color: #B8B8B8;
+}
+.infoProfile1 .back{
+  background: black;
+  color:white;
+  width: 10%;
+  border-radius: 13px;
+  padding: 0.5%;
+  font-size: 13px;
+}
+.infoProfile1 .div1{
+  width: 70%;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+}
+.infoProfile1 .div2{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80%;
+}
+.infoProfile1 .div2 img{
+  width: 90%;
+}
+
+@media only screen and (max-width: 990px) {
+
+  .containerProfile{
+    padding-bottom: 10%;
+    flex-direction: column;
+    padding-top: 10%;
+  }
+  .infoType{
+    width: 90%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .infoProfile{
+    width: 90%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #profieImg{
+    bottom: 0%;
+  }
+  .infoProfile1 .div1{
+    width: 98%;
+    padding: 1%;
+  }
+  .infoProfile1 .div2{
+    display: none;
+  }
+  .infoProfile1{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .infoProfile h1{
+    background: #242424;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .infoProfile1 .back{
+    width: 13%;
+    border-radius: 16px;
+    padding: 1%;
+    font-size: 15px;
+  }
+  .infoProduct .back{
+    left: 1%;
+    top: 2%;
+    width: 13%;
+    border-radius: 16px;
+    padding: 1%;
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .infoProfile{
+    width: 95%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .infoType{
+    width: 95%;
+  }
+  .infoProfile table{
+    margin: 2.5%;
+    width: 95%;
+  }
+  #tableLineTop{
+    padding-bottom: 7%;
+  }
+  #tableLineBottom{
+    padding-top: 9%;
+    padding-bottom: 5%;
+  }
+  .infoProfile #button button{
+    font-size: 16px;
+    height: 8vh;
+  }
+  .infoProfile #button{
+    height: 60vh;
+  }
+  .infoProduct .back{
+    font-size: 10px;
+  }
+  #profieImg{
+    display: none;
+  }
+  .infoProfile1{
+    height: 100vh;
+  }
+  .infoProfile1 .back{
+    width: 20%;
+    height: 8vh;
+    font-size: 14px;
+  }
+  
+}
+
+/* Edit User */
+
+.editUser{
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.editUser .header{
+  position: relative;
+}
+.editUser .back{
+  background: white;
+  position: absolute;
+  width: 8%;
+  padding: 1%;
+  top: 15%;
+  left: 2%;
+  border-radius: 25px;
+}
+.editUser h1{
+  border-radius:10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+  color: white;
+}
+.editUser form{
+  display: flex;
+  justify-content: center;
+}
+.editUser table{
+  width: 80%;
+  margin: 2% 0%;
+}
+.editUser table tr th,
+.editUser table tr td{
+  text-align: start;
+}
+.editUser table tr th{
+  border-top:1px solid gray;
+}
+.editUser form{
+  width: 100%;
+  border-radius:0px 0px 10px 10px;
+  background: white;
+}
+.editUser input{
+  padding: 1%;
+  height: 10%;
+  width: 50%;
+}
+.editUser button{
+  padding: 0.2%;
+  height: 4%;
+}
+#update{
+  width: 10%;
+  height: 6%;
+  padding: 0%;
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  border-radius: 25px;
+  border: 1px solid #191919;
+}
+#update1{
+  width: 10%;
+  height: 10%;
+  padding: 0%;
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  border-radius: 25px;
+  border: 1px solid #191919;
+}
+
+@media only screen and (max-width: 990px) {
+
+  .editUser{
+    width: 90%;
+    margin: 0%;
+  }
+  .editUser h1{
+    height: 10vh;
+  }
+  .editUser .back{
+    width: 15%;
+    height: 6vh;
+  }
+  .editUser table{
+    width: 98%;
+    margin: 1% 0%;
+  }
+  .editUser table tr th,
+  .editUser table tr td{
+    font-size: 20px;
+  }
+  .editUser input{
+    padding: 1% 2%;
+    height: 10vh;
+    width: 90%;
+    font-size: 20px;
+  }
+  #update{
+    width: 90%;
+    height: 9%;
+    font-size: 30px;
+    border-radius: 50px;
+    right: 5%;
+    bottom: -8%;
+  }
+  #update1{
+    width: 90%;
+    height: 15%;
+    font-size: 30px;
+    border-radius: 50px;
+    right: 5%;
+    bottom: -8%;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .editUser{
+    width: 95%;
+  }
+  .editUser h1{
+    height: 8vh;
+    font-size: 20px;
+  }
+  .editUser .back{
+    height: 3vh;
+    font-size: 12px;
+    left: 1%;
+    top: 20%;
+  }
+  .editUser table{
+    width: 96%;
+    margin: 2% 0%;
+  }
+  .editUser table tr th,
+  .editUser table tr td{
+    font-size: 14px;
+  }
+  .editUser input{
+    padding: 2%;
+    height: 5vh;
+    width: 80%;
+    font-size: 15px;
+  }
+  #update,
+  #update1{
+    font-size: 25px;
+  }
+}
+
+
+/* View User */
+  
+.viewUser{
+  border: 1px solid rgb(231, 227, 227);
+  position: relative;
+}
+.viewUser table{
+  margin-bottom: 5%;
+}
+.viewUser table thead tr th{
+  background: #191919;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+.viewUser table tbody tr td,
+.viewUser table tbody tr th{
+  text-align: center;
+  width: 50%;
+}
+.viewUser .Back{
+  background: #b1b1b1;
+  border: 1px solid #191919;
+  width: 6%;
+  border-radius: 13px;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.viewUser{
+  border: 1px solid rgb(231, 227, 227);
+  position: relative;
+}
+.viewUser table{
+  margin-bottom: 5%;
+}
+.viewUser table thead tr th{
+  background: #191919;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+.viewUser table tbody tr td,
+.viewUser table tbody tr th{
+  text-align: center;
+  width: 50%;
+}
+.viewUser .Back{
+  background: #b1b1b1;
+  border: 1px solid #191919;
+  width: 6%;
+  border-radius: 13px;
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 990px) {
+  .viewUser .Back{
+    width: 14%;
+    height: 6vh;
+    left: 1%;
+    padding: 1%;
+    font-size: 16px;
+  }
+}
+  
+/* All users */
+
+.allusers{
+ width: 100%;
+}
+.allusers .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.allusers .info p{
+  margin: 2% 0%;
+}
+.allusers input{
+  width: 30%;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+  border-radius: 22.5px;
+  background: white;
+  padding: 0.5%;
+  padding-left: 1%;
+}
+.allusers .table{
+  overflow: scroll;
+  height: 50vh;
+}
+.table button{
+  padding: 1%;
+  background: none;
+  border:none;
+  cursor: pointer;
+}
+.allusers .table table tr th{
+  border:1px solid gray;
+  border-radius: 6px;
+  padding: 0.5% 0%;
+  text-align: center;
+}
+.allusers table tr td{
+  background: #523838;
+  color:white;
+  padding: 0.5% 1%;
+  font-family:sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+
+   .allusers .table{
+    overflow: scroll;
+    height: 82vh;
+   }
+}

@@ -1,0 +1,410 @@
+/* Basket Page */
+.containerBasket{
+    background-color: #e1e1e1;
+    padding: 6%;
+  }
+  .basketBox{
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    border-radius: 6px;
+    position: relative;
+    border-radius: 20px;
+  }
+  .basketBox .btnBack{
+    padding: 0%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:gray;
+    text-align: start;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 35%;
+  }
+  .basketBox .end{
+    text-align: end;
+    justify-content: end;
+    width: 8%;
+  }
+  .containerBasket .footerBasket{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .basketProduct{
+    width: 60%;
+    background-color: white;
+    padding: 2% 5%;
+    border-radius: 6px 0px 0px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .containerBasket .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .basketProduct p{
+    color:gray;
+    display: flex;
+    align-items: center;
+  }
+  .basketCalculator{
+    padding: 2% 5%;
+    width: 40%;
+    background-color: #B8B8B8;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 6px 6px 0px;
+  }
+  .basketCalculator select{
+    height: 7vh;
+    width: 100%;
+    font-size: 15px;
+    background:#D0CFCF;
+  }
+  .basketCalculator button{
+    height: 10%;
+    width: 100%;
+    background-color: #0E0E0E;
+    color: white;
+    border-radius: 6px;
+    padding: 1%;
+    font-size: 30px;
+    font-family: serif;
+    cursor: pointer;
+  }
+  .basketCalculator button:hover{
+    color: #B8B8B8;
+  }
+  .containerBasket #image{
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    top: -14%;
+  }
+  .basketProduct .body{
+    overflow: scroll;
+    margin: 5% 0px;
+    min-height: 50vh;
+  }
+  .basketProduct .body .productNumber{
+    padding: 5% 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  } 
+  .basketProduct .body .productNumber .info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .basketProduct .body .productNumber .info .calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  .basketProduct .body .productNumber .info .calculator p{
+    font-size: 22px;
+    cursor: pointer;
+    color: #0E0E0E;
+    margin: 0px;
+  }
+  .basketProduct .body .productNumber .info .quantity{
+    background: white;
+    border: 1px solid black;
+    padding: 5% 20% ;
+    margin: 0px 10%;
+    border-radius: 6px;
+  }
+  .basketProduct .body .productNumber .info .nameShirt{
+    width: 40%;
+  }
+  .basketProduct .body .productNumber .name{
+    color: black;
+  }
+  .basketProduct .body .productNumber .info .price{
+    width: 30%;
+  }
+  .basketProduct .body .productNumber .info .delete{
+    width: 10%;
+    cursor: pointer;
+    color:#AC3434;
+    padding: 1%;
+    background: white;
+    border: none;
+  }
+  
+  @media only screen and (max-width: 990px) {
+    
+    .basketProduct .body .productNumber .info .nameShirt{
+      width: 30%;
+    }
+    .basketProduct .body .productNumber .info .calculator{
+      width: 30%;
+    }
+    .basketProduct .body .productNumber .info .calculator p{
+      font-size: 25px;
+    }
+    .basketProduct .body .productNumber .info .quantity{
+      padding: 3% 10% ;
+    }
+    .basketProduct .body{
+      margin: 0px;
+      min-height: 60vh;
+    }
+    .basketBox{
+      flex-direction: column;
+      height: 100%;
+    }
+    .basketProduct{
+      width: 100%;
+      height: 100vh;
+      border-radius: 6px 6px 0px 0px;
+    }
+    .basketCalculator{
+      width: 100%;
+      background-color: #B8B8B8;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 0px 0px 6px 6px;
+    }
+    .basketCalculator button{
+      padding: 1%;
+      font-size: 40px;
+    }
+    .containerBasket #image{
+      display: none;
+    }
+  
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .containerBasket{
+      padding: 6% 2%;
+    }
+    .basketProduct{
+      padding: 2% 1.5%;
+      height: 90vh;
+    }
+    .basketProduct .body{
+      height: 70vh;
+    }
+    .basketProduct .body .productNumber .info .nameShirt p{
+     font-size: 12px;
+    }
+    .containerBasket .footerBasket button{
+      font-size: 14px;
+      width: 50%;
+    }
+  }
+  
+  /* Basket History */
+.basketHistory{
+    width: 100%;
+    height: 100%;
+    border-radius:16px;
+  }
+  .bodyHistory{
+    height: 90%;
+    width: 100%;
+    border-radius:0px 0px 16px 16px;
+  }
+  .bodyHistory .table{
+    width: 100%;
+    height: 98%;
+    overflow: scroll;
+  }
+  .bodyHistory table{
+    width: 90%;
+    margin: 1% 5%;
+  }
+  .bodyHistory .table table tr th,
+  .bodyHistory .table table tr td{
+    padding: 2%;
+    border-bottom: 1px solid black;
+  }
+  .bodyHistory .table table tr th{
+    font-size: 22px;
+    font-family: 'Inter';
+  }
+  .bodyHistory .tableShirt tr th,
+  .bodyHistory .tableShirt tr td{
+    padding: 0.2%;
+    border-radius:5px ;
+  }
+  .basketBox #btnBack{
+    padding: 0.5%;
+    border-radius: 40px;
+    width: 8%;
+    height: 4%;
+    background: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 1%;
+    top: 2%;
+  }
+  .basketHistory h1{
+    height: 10%;
+    width: 100%;
+    background: #191919;
+    color: white;
+    border-radius:16px 16px 0px 0px;
+  }
+  .bodyHistory .table .linetd{
+    width: 35%;
+  }
+  .bodyHistory .table .linetd div{
+    background-color: #D0D0D0;
+    border-radius: 13px;
+    height: 1vh;
+    width: 100%;
+  }
+  .bodyHistory .table .linetd .line1{
+    background-color: #1A1A1A;
+  } 
+  .bodyHistory .table .linetd .line2 div{
+    background-color: #1A1A1A;
+    width: 20%;
+  } 
+  .bodyHistory .table .linetd .line3 div{
+    background-color: #1A1A1A;
+    width: 60%;
+  } 
+  .bodyHistory .table .linetd .line4 div{
+    background-color: #1A1A1A;
+    width: 50%;
+  } 
+  .bodyHistory .table .linetd .line5 div{
+    background-color: #1A1A1A;
+    width: 5%;
+  } 
+  .bodyHistory .table .linetd .line6 div{
+    background-color: #1A1A1A;
+    width: 10%;
+  } 
+  .bodyHistory .backBack{
+    width: 10%;
+    background: none;
+    color: #0E0E0E;
+    border: none;
+  }
+  .bodyHistory .DetailsShirt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .bodyHistory .DetailsShirt .left{
+    width: 40%;
+  }
+  .bodyHistory .DetailsShirt .right{
+    width: 60%;
+    background: #0E0E0E;
+    position: relative;
+    border-radius: 6px;
+  }
+  .DetailsShirt table tr th,
+  .DetailsShirt table tr td{
+    color:white;
+    border: 1px solid gray;
+    text-align: start;
+    padding: 0.7%;
+    border-radius: 5px;
+  }
+  .DetailsShirt button{
+    width: 10%;
+    height: 4%;
+    padding: 0%;
+    position: absolute;
+    top:1%;
+    left: 1%;
+    border: none;
+    background: none;
+    color: white;
+    text-align: start;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 990px) {
+  
+    .bodyHistory{
+      height: 125vh;
+    }
+    .basketHistory h1{
+      height: 10vh;
+      width: 100%;
+      background: #191919;
+      color: white;
+      border-radius:16px 16px 0px 0px;
+    }
+    .bodyHistory table{
+      width: 98%;
+      margin: 1%;
+    }
+    .basketBox #btnBack{
+      font-size: 18px;
+      padding: 0%;
+      width: 15%;
+      height: 5%;
+      left: 1%;
+      top: 1%;
+    }
+    .bodyHistory .table table tr td{
+      font-size: 10px;
+    }
+    .bodyHistory .DetailsShirt{
+      flex-direction: column;
+      align-items: center;
+    }
+    .bodyHistory .DetailsShirt .left{
+      width: 65%;
+    }
+    .bodyHistory .DetailsShirt .right{
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 0px 16px 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .bodyHistory{
+      height: 80vh;
+    }
+    .basketHistory h1{
+      height: 8vh;
+    }
+    .basketBox #btnBack{
+      font-size: 12px;
+      height: 4%;
+    }
+    .bodyHistory .table table tr th{
+      font-size: 18px;
+    }
+    .bodyHistory .table table tr td{
+      font-size: 10px;
+    }
+    #none{
+      display: none;
+    }
+    .DetailsShirt table{
+      margin-top: 8%;
+      margin-bottom: 3%;
+    }
+  }
+  
